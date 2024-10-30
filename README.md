@@ -39,6 +39,49 @@
     </section>
     <section>
         <h2>Utilizando a API</h2>
+        <h3>Autorizações</h3>
+        <p>O sistema inteiro está protegido de usuários anônimos por JWT</p>
+        <p>Para obter o token de acesso:</p>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/authentication/token/</pre></div>
+        <div>
+            <h4>Requisitos para obtenção de token de acesso</h4>
+            <table>
+                <thead>
+                    <th>Variável</th>
+                    <th>Tipo</th>
+                    <th>Explicação</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>username</td>
+                        <td>Str</td>
+                        <td>Nome de usuário</td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>Str</td>
+                        <td>Senha</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Exemplos:</p>
+            <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>
+                Request
+                    + Body
+                        {
+                            "username": "usertest",
+                            "password": "12345"
+                        }
+            </pre></div>
+            <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>
+                Response
+                    + Body
+                        {
+                            "Refresh token": "paworigç\saorinhpaorhórhgóirhgpóieg~lh",
+                            "Access token": "paworigç\gaolhgfrlkutfçagorghll.h~lh",                        
+                        }
+            </pre></div>
+        </div>
         <h3>Profissionais</h3>
         <p>Para criar o registro de profissional (POST), ou listar todos os profissionais (GET):</p>
         <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/professionals/</pre></div>
