@@ -37,4 +37,63 @@
         <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python manage.py test</pre></div>  
         </div>
     </section>
+    <section>
+        <h2>Utilizando a API</h2>
+        <p>Para criar o registro de profissional (POST), ou listar todos os profissionais (GET):</p>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/professionals/</pre></div>
+        <div>
+            <h4>Requisitos para criação de profissional</h4>
+            | user | Um dicionário com username e password |
+            | address | Endereço (str) |
+            | occupation | Profissão (str) |
+            | name (opt) | Nome Completo (str) |
+            | social_name (opt) | Nome Social (str) |
+            <p>Exemplos:</p>
+            + Request (application/json)
+
+                + Body
+
+                        {
+                        "user": {
+                            "username": "usertest",
+                            "password": "12345"
+                        }
+                        "address": "Rua Python",
+                        "occupation": "Dev"
+                        }
+
+            + Response 200 (application/json)
+
+                + Body
+
+                    {
+                        "professional": {
+                            "id": "6a5a1e36-9c00-4ee3-ab44-cdc8d5096b54",
+                            "user": {
+                                "id": "128aa3f2-e52b-4ff4-9a8a-8ca9c461cdf0",
+                                "password": "12345",
+                                "last_login": null,
+                                "is_superuser": false,
+                                "username": "usertest",
+                                "first_name": "",
+                                "last_name": "",
+                                "email": "",
+                                "is_staff": false,
+                                "is_active": true,
+                                "date_joined": "2024-10-30T11:28:11.050565-03:00",
+                                "created_at": "2024-10-30T11:28:11.050565-03:00",
+                                "updated_at": "2024-10-30T11:28:11.050565-03:00",
+                                "groups": [],
+                                "user_permissions": []
+                            },
+                            "social_name": null,
+                            "name": null,
+                            "address": "Rus Python",
+                            "occupation": "dev",
+                            "created_at": "2024-10-30T11:28:11.059562-03:00",
+                            "updated_at": "2024-10-30T11:28:11.059562-03:00"
+                        },
+                    }    
+        </div>
+    </section>
 </body>

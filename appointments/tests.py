@@ -7,7 +7,7 @@ from datetime import date, time
 
 
 
-class ProfessionalTestCase(APITestCase):
+class AppointmentTestCase(APITestCase):
     def setUp(self):
         self.user = User.objects.create_superuser(
             username="admin",
