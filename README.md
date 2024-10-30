@@ -43,11 +43,40 @@
         <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/professionals/</pre></div>
         <div>
             <h4>Requisitos para criação de profissional</h4>
-            | user | Um dicionário com username e password |
-            | address | Endereço (str) |
-            | occupation | Profissão (str) |
-            | name (opt) | Nome Completo (str) |
-            | social_name (opt) | Nome Social (str) |
+            <table>
+                <thead>
+                    <th>Variável</th>
+                    <th>Tipo</th>
+                    <th>Explicação</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>user</td>
+                        <td>Dict</td>
+                        <td>Dicionário com "username" e "password"</td>
+                    </tr>
+                    <tr>
+                        <td>address</td>
+                        <td>Str</td>
+                        <td>Endereço</td>
+                    </tr>
+                    <tr>
+                        <td>occupation</td>
+                        <td>Str</td>
+                        <td>Profissão</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>Str</td>
+                        <td>Nome completo</td>
+                    </tr>
+                    <tr>
+                        <td>social_name</td>
+                        <td>Str</td>
+                        <td>Nome social</td>
+                    </tr>
+                </tbody>
+            </table>
             <p>Exemplos:</p>
             <code>
             Request
