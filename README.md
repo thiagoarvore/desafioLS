@@ -41,7 +41,7 @@
         <h2>Utilizando a API</h2>
         <h3>Profissionais</h3>
         <p>Para criar o registro de profissional (POST), ou listar todos os profissionais (GET):</p>
-        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/professionals/</pre></div>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/professionals/</pre></div>
         <div>
             <h4>Requisitos para criação de profissional</h4>
             <table>
@@ -121,9 +121,9 @@
                 }
             </pre></div>            
         </div>
-        <h3>Conslutas</h3>
+        <h3>Consultas</h3>
         <p>Para criar uma consulta (POST), ou listar todas as consultas (GET):</p>
-        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/appointments/</pre></div>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/appointments/</pre></div>
         <div>
             <h4>Requisitos para criação de profissional</h4>
             <table>
@@ -197,5 +197,9 @@
                         ]
             </pre></div>            
         </div>
+        <p>Para listar todas as consultas do usuário logado (GET):</p>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/user-appointments/</pre></div>
+        <p>Para listar todas as consultas de um certo profissional (GET):</p>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>url/api/v1/professional/appointments/*id do profissioanal*/</pre></div>
     </section>
 </body>
