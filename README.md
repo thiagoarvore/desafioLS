@@ -23,7 +23,7 @@
     <section>
         <h2>Instalação</h2>
         <p>Com o ambiente virtual ativado, instale as dependências do projeto usando o comando:</p>
-        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install -r requirements.txt</pre></div>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>poetry install -r requirements.txt</pre></div>
     </section>
     <section>
         <h2>Rodar o projeto</h2>
