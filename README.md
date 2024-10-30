@@ -78,8 +78,7 @@
                 </tbody>
             </table>
             <p>Exemplos:</p>
-            <code>
-            Request
+            <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>Request
             + Body
                 {
                 "user": {
@@ -88,8 +87,7 @@
                 }
                 "address": "Rua Python",
                 "occupation": "Dev"
-                }
-            </code>
+                }</pre></div>
             <code>
             Response
             + Body
