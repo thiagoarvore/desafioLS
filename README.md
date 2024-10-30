@@ -88,8 +88,7 @@
                 "address": "Rua Python",
                 "occupation": "Dev"
                 }</pre></div>
-            <code>
-            Response
+            <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>Response
             + Body
                 {
                     "professional": {
@@ -118,8 +117,8 @@
                         "created_at": "2024-10-30T11:28:11.059562-03:00",
                         "updated_at": "2024-10-30T11:28:11.059562-03:00"
                     },
-                } 
-            </code>
+                } </pre></div>
+            
         </div>
     </section>
 </body>
