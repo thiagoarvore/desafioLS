@@ -23,13 +23,10 @@ class ProfessionalAppointmentListAPIView(generics.ListAPIView):
     serializer_class = AppointmentSerializer
     lookup_field = 'pk'
 
-    # def get_queryset(self):
-    #     qs = super().get_queryset()
-    #     return qs.filter(professional__id=self.pk)
-    
-    def filter_queryset(self, queryset):
+    def get_queryset(self):
+        prof_id = self.kwargs['pk']
         qs = super().get_queryset()
-        return qs.filter(professional__id=self.pk)
+        return qs.filter(professional=prof_id)
 
 
 class UserAppointmentListAPIView(generics.ListAPIView):
