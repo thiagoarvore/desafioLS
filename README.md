@@ -29,6 +29,8 @@
         <h2>Rodar o projeto</h2>
         <p>Após instalar as dependências, aplique as migrations no banco de dados com o comando:</p>
         <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python manage.py migrate</pre></div>
+        <p>Crie o super usuário: (para o teste, login: admin, password: 1234578)</p>
+        <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python manage.py createsuperuser</pre></div>
         <p>Inicie o servidor:</p>
         <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python manage.py runserver</pre></div>
         <p>Para rodar o teste de criação de profissional (com criação automática de usuário no sistema):</p>
