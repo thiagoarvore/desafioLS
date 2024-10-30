@@ -49,51 +49,50 @@
             | name (opt) | Nome Completo (str) |
             | social_name (opt) | Nome Social (str) |
             <p>Exemplos:</p>
-            + Request (application/json)
-
-                + Body
-
-                        {
+            <code>
+            Request
+            + Body
+                {
+                "user": {
+                    "username": "usertest",
+                    "password": "12345"
+                }
+                "address": "Rua Python",
+                "occupation": "Dev"
+                }
+            </code>
+            <code>
+            Response
+            + Body
+                {
+                    "professional": {
+                        "id": "6a5a1e36-9c00-4ee3-ab44-cdc8d5096b54",
                         "user": {
+                            "id": "128aa3f2-e52b-4ff4-9a8a-8ca9c461cdf0",
+                            "password": "12345",
+                            "last_login": null,
+                            "is_superuser": false,
                             "username": "usertest",
-                            "password": "12345"
-                        }
-                        "address": "Rua Python",
-                        "occupation": "Dev"
-                        }
-
-            + Response 200 (application/json)
-
-                + Body
-
-                    {
-                        "professional": {
-                            "id": "6a5a1e36-9c00-4ee3-ab44-cdc8d5096b54",
-                            "user": {
-                                "id": "128aa3f2-e52b-4ff4-9a8a-8ca9c461cdf0",
-                                "password": "12345",
-                                "last_login": null,
-                                "is_superuser": false,
-                                "username": "usertest",
-                                "first_name": "",
-                                "last_name": "",
-                                "email": "",
-                                "is_staff": false,
-                                "is_active": true,
-                                "date_joined": "2024-10-30T11:28:11.050565-03:00",
-                                "created_at": "2024-10-30T11:28:11.050565-03:00",
-                                "updated_at": "2024-10-30T11:28:11.050565-03:00",
-                                "groups": [],
-                                "user_permissions": []
-                            },
-                            "social_name": null,
-                            "name": null,
-                            "address": "Rus Python",
-                            "occupation": "dev",
-                            "created_at": "2024-10-30T11:28:11.059562-03:00",
-                            "updated_at": "2024-10-30T11:28:11.059562-03:00"
+                            "first_name": "",
+                            "last_name": "",
+                            "email": "",
+                            "is_staff": false,
+                            "is_active": true,
+                            "date_joined": "2024-10-30T11:28:11.050565-03:00",
+                            "created_at": "2024-10-30T11:28:11.050565-03:00",
+                            "updated_at": "2024-10-30T11:28:11.050565-03:00",
+                            "groups": [],
+                            "user_permissions": []
                         },
-                    }    
+                        "social_name": null,
+                        "name": null,
+                        "address": "Rus Python",
+                        "occupation": "dev",
+                        "created_at": "2024-10-30T11:28:11.059562-03:00",
+                        "updated_at": "2024-10-30T11:28:11.059562-03:00"
+                    },
+                } 
+            </code>
         </div>
     </section>
 </body>
